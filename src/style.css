@@ -1,0 +1,55 @@
+h1,
+p {
+  font-family: Lato;
+}
+.loading {
+  width: 150px;
+  height: 70px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: black;
+  margin: 0 10px;
+}
+.first {
+  animation: slide 2s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+.second {
+  animation: slide 2s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+.third {
+  animation: slide 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+@keyframes slide {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* .list-item {
+  border: 1px solid;
+  padding: 16px;
+  margin: 16px;
+} */
+.img-cntr {
+  height: 300px;
+  border: 1px solid red;
+}
+.img-cntr > dt {
+  display: flex;
+}
+.img {
+  height: auto;
+  object-fit: contain;
+}
